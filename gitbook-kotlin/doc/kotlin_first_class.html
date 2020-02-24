@@ -1,0 +1,513 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Kotlin的第一个类 · Java技术知识点总结</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="kotlin_class_method.html" />
+    
+    
+    <link rel="prev" href="kotlin_base.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://wangyuansxya.github.io/" target="_blank" class="custom-link">yuan</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    为什么应该切换到Kotlin？
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="kotlin_why.html">
+            
+                <a href="kotlin_why.html">
+            
+                    
+                    为什么应该切换到Kotlin？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Kotlin基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="kotlin_env.html">
+            
+                <a href="kotlin_env.html">
+            
+                    
+                    Kotlin开发环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="kotlin_base.html">
+            
+                <a href="kotlin_base.html">
+            
+                    
+                    Kotlin基础
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="kotlin_first_class.html">
+            
+                <a href="kotlin_first_class.html">
+            
+                    
+                    Kotlin的第一个类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="kotlin_class_method.html">
+            
+                <a href="kotlin_class_method.html">
+            
+                    
+                    Kotlin类和函数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="kotlin_data_class.html">
+            
+                <a href="kotlin_data_class.html">
+            
+                    
+                    Kotlin数据类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="kotlin_modifier.html">
+            
+                <a href="kotlin_modifier.html">
+            
+                    
+                    Kotlin可见性修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="kotlin_override.html">
+            
+                <a href="kotlin_override.html">
+            
+                    
+                    Kotlin操作符重载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="kotlin_lambdas.html">
+            
+                <a href="kotlin_lambdas.html">
+            
+                    
+                    Kotlin Lambdas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="kotlin_Android_Extensions.html">
+            
+                <a href="kotlin_Android_Extensions.html">
+            
+                    
+                    kotlin Android Extensions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="kotlin_anko.html">
+            
+                <a href="kotlin_anko.html">
+            
+                    
+                    Kotlin的Anko库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../end/">
+            
+                <a href="../end/">
+            
+                    
+                    结束
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Kotlin的第一个类</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><strong>2017-07-20-&#x4F7F;&#x7528;Kotlin&#x7F16;&#x5199;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x7C7B;</strong></p>
+<p>1&#xFF0C;&#x53D8;&#x91CF;&#x548C;&#x5C5E;&#x6027;
+&#x5728;Kotlin&#x4E2D;&#xFF0C;&#x4E00;&#x5207;&#x90FD;&#x662F;&#x5BF9;&#x8C61;&#x3002;&#x6CA1;&#x6709;&#x50CF;Java&#x4E2D;&#x90A3;&#x6837;&#x7684;&#x539F;&#x59CB;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x4E2A;&#x662F;&#x975E;&#x5E38;&#x6709;&#x5E2E;
+&#x52A9;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E00;&#x81F4;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5904;&#x7406;&#x6240;&#x6709;&#x7684;&#x53EF;&#x7528;&#x7684;&#x7C7B;&#x578B;</p>
+<p>2&#xFF0C;&#x57FA;&#x672C;&#x7C7B;&#x578B;</p>
+<p>&#x5F53;&#x7136;&#xFF0C;&#x50CF;integer&#xFF0C;float&#x6216;&#x8005;boolean&#x7B49;&#x7C7B;&#x578B;&#x4ECD;&#x7136;&#x5B58;&#x5728;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x4EEC;&#x5168;&#x90E8;&#x90FD;&#x4F1A;&#x4F5C;&#x4E3A;&#x5BF9;&#x8C61;
+&#x5B58;&#x5728;&#x7684;&#x3002;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#x7684;&#x540D;&#x5B57;&#x548C;&#x5B83;&#x4EEC;&#x5DE5;&#x4F5C;&#x65B9;&#x5F0F;&#x90FD;&#x662F;&#x4E0E;Java&#x975E;&#x5E38;&#x76F8;&#x4F3C;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x6709;&#x4E00;&#x4E9B;&#x4E0D;&#x540C;
+&#x4E4B;&#x5904;&#x4F60;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x8003;&#x8651;&#x5230;&#xFF1A;</p>
+<ul>
+<li><p>&#x6570;&#x5B57;&#x7C7B;&#x578B;&#x4E2D;&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x8F6C;&#x578B;&#x3002;&#x4E3E;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x4F60;&#x4E0D;&#x80FD;&#x7ED9; Double &#x53D8;&#x91CF;&#x5206;&#x914D;&#x4E00;
+&#x4E2A; Int &#x3002;&#x5FC5;&#x987B;&#x8981;&#x505A;&#x4E00;&#x4E2A;&#x660E;&#x786E;&#x7684;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4F17;&#x591A;&#x7684;&#x51FD;&#x6570;&#x4E4B;&#x4E00;&#xFF1A;</p>
+<pre><code>  val i:Int=7 &lt;br&gt;
+  val d: Double = i.toDouble()
+</code></pre></li>
+<li><p>&#x5B57;&#x7B26;&#xFF08;Char&#xFF09; &#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#x6765;&#x5904;&#x7406;&#x3002;&#x5728;&#x9700;&#x8981;&#x65F6;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x628A;&#x4ED6;&#x4EEC;&#x8F6C;&#x6362;&#x4E3A;&#x4E00;&#x4E2A;&#x6570;&#x5B57;&#xFF1A;</p>
+<pre><code>  val c : char = &quot;c&quot;;&lt;br&gt;
+  val i : Int = c.toInt();
+</code></pre></li>
+<li><p>&#x4F4D;&#x8FD0;&#x7B97;&#x4E5F;&#x6709;&#x4E00;&#x70B9;&#x4E0D;&#x540C;&#x3002;&#x5728;Android&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7ECF;&#x5E38;&#x5728; flags &#x4E2D;&#x4F7F;&#x7528;&#x201C;&#x6216;&#x201D;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4F7F;&#x7528;&quot;and&quot;&#x548C;&quot;or&#x6765;&#x4E3E;&#x4F8B;&#xFF1A;</p>
+<pre><code>  // Java &lt;br&gt;
+  int bitwiseOr = FLAG1 | FLAG2; &lt;br&gt;
+  int bitwiseAnd = FLAG1 &amp; FLAG2; &lt;br&gt;
+  // Kotlin &lt;br&gt;
+  val bitwiseOr = FLAG1 or FLAG2 &lt;br&gt;
+  val bitwiseAnd = FLAG1 and FLAG2 &lt;br&gt;
+</code></pre></li>
+</ul>
+<blockquote>
+<p>&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x5176;&#x4ED6;&#x7684;&#x4F4D;&#x64CD;&#x4F5C;&#x7B26;&#xFF0C;&#x6BD4;&#x5982; sh1 , shs , ushr , xor &#x6216; inv &#x3002;&#x5F53;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;<a href="http://kotlinlang.org/docs/reference/basic-types.html#operations" target="_blank">Kotlin&#x5B98;&#x7F51;</a>&#x67E5;&#x770B;&#x3002;</p>
+</blockquote>
+<ul>
+<li><p>&#x5B57;&#x9762;&#x4E0A;&#x53EF;&#x4EE5;&#x5199;&#x660E;&#x5177;&#x4F53;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x4E2A;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x4E00;&#x4E2A;&#x901A;&#x7528;&#x7684;Kotlin&#x5B9E;&#x8DF5;&#x65F6;&#x7701;&#x7565;&#x53D8;&#x91CF;&#x7684;&#x7C7B;&#x578B;&#xFF08;&#x6211;&#x4EEC;&#x9A6C;&#x4E0A;&#x5C31;&#x80FD;&#x770B;&#x5230;&#xFF09; &#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BA9;&#x7F16;&#x8BD1;&#x5668;&#x81EA;&#x5DF1;&#x53BB;&#x63A8;&#x65AD;&#x51FA;&#x5177;&#x4F53;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<pre><code>  val i = 12 // An Int
+  val iHex = 0x0f // &#x4E00;&#x4E2A;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7684;Int&#x7C7B;&#x578B;
+  val l = 3L // A Long
+  val d = 3.5 // A Double
+  val f = 3.5F // A Float
+</code></pre></li>
+</ul>
+<ul>
+<li><p>&#x4E00;&#x4E2A;String&#x53EF;&#x4EE5;&#x50CF;&#x6570;&#x7EC4;&#x90A3;&#x6837;&#x8BBF;&#x95EE;&#xFF0C;&#x5E76;&#x4E14;&#x88AB;&#x8FED;&#x4EE3;&#xFF1A;</p>
+<pre><code>  val name = bean?.name ?: &quot;empty&quot;
+  val c = name[1];// &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&apos;m&apos;
+  //&#x8FED;&#x4EE3;String
+  for(c in name) {
+  print(c);
+  }
+</code></pre></li>
+</ul>
+<p>3,&#x53D8;&#x91CF;</p>
+<p>&#x53D8;&#x91CF;&#x53EF;&#x4EE5;&#x5F88;&#x7B80;&#x5355;&#x5730;&#x5B9A;&#x4E49;&#x6210;&#x53EF;&#x53D8;( var )&#x548C;&#x4E0D;&#x53EF;&#x53D8;&#xFF08; val &#xFF09; &#x7684;&#x53D8;&#x91CF;&#x3002;&#x8FD9;&#x4E2A;&#x4E0E;Java&#x4E2D;&#x4F7F;
+&#x7528;&#x7684; final &#x5F88;&#x76F8;&#x4F3C;&#x3002;&#x4F46;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x5728;Kotlin&#xFF08;&#x548C;&#x5176;&#x5B83;&#x5F88;&#x591A;&#x73B0;&#x4EE3;&#x8BED;&#x8A00;&#xFF09; &#x4E2D;&#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x91CD;&#x8981;
+&#x7684;&#x6982;&#x5FF5;&#x3002;</p>
+<p>&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x53D8;&#x5BF9;&#x8C61;&#x610F;&#x5473;&#x7740;&#x5B83;&#x5728;&#x5B9E;&#x4F8B;&#x5316;&#x4E4B;&#x540E;&#x5C31;&#x4E0D;&#x80FD;&#x518D;&#x53BB;&#x6539;&#x53D8;&#x5B83;&#x7684;&#x72B6;&#x6001;&#x4E86;</p>
+<p>&#x4E0D;&#x53EF;&#x53D8;&#x5BF9;&#x8C61;&#x4E5F;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;&#x65E0;&#x6CD5;&#x53BB;&#x6539;&#x53D8;&#xFF0C;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x53BB;&#x5B9A;&#x4E49;&#x8BBF;&#x95EE;&#x63A7;
+&#x5236;&#xFF0C;&#x56E0;&#x4E3A;&#x6240;&#x6709;&#x7EBF;&#x7A0B;&#x8BBF;&#x95EE;&#x5230;&#x7684;&#x5BF9;&#x8C61;&#x90FD;&#x662F;&#x540C;&#x4E00;&#x4E2A;</p>
+<p>&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x7684;&#x6982;&#x5FF5;&#x662F;&#xFF1A;&#x5C3D;&#x53EF;&#x80FD;&#x5730;&#x4F7F;&#x7528; val </p>
+<p>&#x5982;&#x679C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x66F4;&#x591A;&#x7684;&#x8303;&#x578B;&#x7C7B;&#x578B;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x6307;&#x5B9A;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code>val a: Any = 23
+val c: Context = activity
+</code></pre><p>4,&#x5C5E;&#x6027;</p>
+<p>&#x5C5E;&#x6027;&#x4E0E;Java&#x4E2D;&#x7684;&#x5B57;&#x6BB5;&#x662F;&#x76F8;&#x540C;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x66F4;&#x52A0;&#x5F3A;&#x5927;&#x3002;&#x5728;kotlin&#x4E2D;&#x6211;&#x4EEC;&#x4E0D;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x53BB;&#x5B9E;&#x73B0;getter&#xFF0C;setter&#x548C;tostring&#x65B9;&#x6CD5;&#x3002;kotlin&#x5DF2;&#x7ECF;&#x5E2E;&#x6211;&#x4EEC;&#x5B8C;&#x6210;&#x3002;&#x5728;Kotlin&#x4E2D;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF1A;</p>
+<pre><code>public class Person {
+    var name: String = &quot;&quot;
+}
+...
+val person = Person()
+person.name = &quot;name&quot;
+val name = person.name
+</code></pre><p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x6307;&#x5B9A;&#xFF0C;&#x5C5E;&#x6027;&#x4F1A;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;getter&#x548C;setter&#x3002;&#x5F53;&#x7136;&#x5B83;&#x4E5F;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x4E3A;&#x4F60;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x4FEE;&#x6539;&#x5B58;&#x5728;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code>public classs Person {
+    var name: String = &quot;&quot;
+        get() = field.toUpperCase()
+        set(value){
+            field = &quot;Name: $value&quot;
+        }
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="kotlin_base.html" class="navigation navigation-prev " aria-label="Previous page: Kotlin基础">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="kotlin_class_method.html" class="navigation navigation-next " aria-label="Next page: Kotlin类和函数">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Kotlin的第一个类","level":"1.3.3","depth":2,"next":{"title":"Kotlin类和函数","level":"1.3.4","depth":2,"path":"doc/kotlin_class_method.md","ref":"doc/kotlin_class_method.md","articles":[]},"previous":{"title":"Kotlin基础","level":"1.3.2","depth":2,"path":"doc/kotlin_base.md","ref":"doc/kotlin_base.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"duoshuo":{"short_name":"wiznote","theme":"default"},"fontsettings":{"theme":"white","family":"sans","size":2},"fontSettings":{"theme":"white","family":"serif","size":2},"highlight":{},"ga":{"token":"UA-39088953-8"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","keywords":"使用手册","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36},"toc":true},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Java技术知识点总结","links":{"home":false,"about":false,"issues":false,"contribute":false,"sidebar":{"yuan":"https://wangyuansxya.github.io/"},"tail":{"Gitbook使用入门":"http://tonydeng.github.io/gitbook-zh/gitbook-howtouse/"},"gitbook":false,"sharing":{"google":true,"facebook":true,"twitter":true,"weibo":true,"qq":true,"qrcode":true}},"introduction":{"path":"README.md","title":"技术知识点总结"},"gitbook":"*","description":"技术知识点总结"},"file":{"path":"doc/kotlin_first_class.md","mtime":"2020-02-24T13:23:06.841Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-24T13:39:20.977Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
